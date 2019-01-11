@@ -5,7 +5,10 @@ python:
 
 sudo: required  # permite realizar instalacoes (sudo apt)
 
-install: pip install tox pylava
+install: pip install tox pylava coveralls
 
 script:
   - tox
+
+after_success:
+  - coveralls
