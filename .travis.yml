@@ -3,8 +3,9 @@ language: python
 python:
   - 3.6
 
-
 sudo: required  # permite realizar instalacoes (sudo apt)
+
+install: pip install tox pylava
 
 script:
   - tox
